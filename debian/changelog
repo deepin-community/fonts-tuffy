@@ -1,3 +1,21 @@
+fonts-tuffy (20120614-3) unstable; urgency=medium
+
+  * Fix Uploaders email address and bump Debian packaging copyright
+    year.
+  * Bump debhelper-compat to 13.
+  * Bump Standards-Version to 4.6.2.
+  * Fix Vcs-* fields to point to the salsa repo.
+  * Remove transition handling for packages older then old-oldstable.
+  * Remove debian/gbp.conf file.
+  * Fix description-synopsis-starts-with-article.
+  * Fix obsolete-url-in-packaging in debian/copyright.
+  * Bump debian/watch version to 4.
+  * Rules-Requires-Root: no.
+  * Fix permissions of installed font files.
+  * Remove binary font files in clean rule.
+
+ -- Fabian Greffrath <fabian@debian.org>  Mon, 03 Jul 2023 09:51:51 +0200
+
 fonts-tuffy (20120614-2.1) unstable; urgency=medium
 
   * Non maintainer upload by the Reproducible Builds team.
@@ -48,7 +66,7 @@ ttf-tuffy (20071106-3) unstable; urgency=low
 
   * Team upload
   * Drop x-ttcidfont-conf, fontconfig et al. from Recommends
-  * Drop a spurious patch introduced by a wrong use of source v3.0, 
+  * Drop a spurious patch introduced by a wrong use of source v3.0,
     that was unapplying 01-spurious-langnames.patch
 
  -- Christian Perrier <bubulle@debian.org>  Tue, 05 Oct 2010 20:14:43 +0200
