@@ -3,5 +3,8 @@
 	dh $@
 
 override_dh_auto_build:
-	chmod 0755 debian/scripts/convert.pe
-	debian/scripts/convert.pe --format ".ttf" *.sfd
+	chmod +x $(CURDIR)/debian/scripts/convert.pe
+	$(CURDIR)/debian/scripts/convert.pe --format ".ttf" *.sfd
+
+execute_after_dh_fixperms:
+	chmod -x $(CURDIR)/debian/fonts-tuffy/usr/share/fonts/truetype/tuffy/*.ttf
